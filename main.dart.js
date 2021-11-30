@@ -1268,7 +1268,7 @@ k=t.z
 p=C.S.eW(P.a9(["username",a],k,k))
 P.b7("json enviado : "+p)
 s=3
-return P.a4(G.D9(P.d8("https://api.ceep.org.br/password/forgot"),p,j),$async$a3I)
+return P.a4(G.D9(P.d8("http://201.42.59.203:3333/password/forgot"),p,j),$async$a3I)
 case 3:o=c
 k=o.b
 P.b7("Response status: "+H.c(k))
@@ -2018,7 +2018,7 @@ h=t.z
 p=C.S.eW(P.a9(["name",a,"username",b,"email",c,"password",d],h,h))
 P.b7("json enviado : "+p)
 s=3
-return P.a4(G.D9(P.d8("https://api.ceep.org.br/usuarios"),p,g),$async$Te)
+return P.a4(G.D9(P.d8("http://201.42.59.203:3333/usuarios"),p,g),$async$Te)
 case 3:o=f
 h=o.b
 P.b7("Response status: "+H.c(h))
@@ -5254,7 +5254,7 @@ m='{"idPartida": "'+H.c(a)+'","idJogador": "'+H.c(b)+'","barcosPosicoes": ['+G.a
 P.b7("Params: "+m)
 P.b7("json enviado : "+m)
 s=3
-return P.a4(G.D9(P.d8("https://api.ceep.org.br/carregaJogo"),m,n),$async$US)
+return P.a4(G.D9(P.d8("http://201.42.59.203:3333/carregaJogo"),m,n),$async$US)
 case 3:p=e
 o=p.b
 P.b7("Response status: "+H.c(o))
@@ -13042,7 +13042,7 @@ l=P.a9(["Content-Type","application/json"],m,m)
 m=t.z
 p=C.S.eW(P.a9(["username",a,"password",b],m,m))
 s=3
-return P.a4(G.D9(P.d8("https://api.ceep.org.br/login"),p,l),$async$a_q)
+return P.a4(G.D9(P.d8("http://201.42.59.203:3333/login"),p,l),$async$a_q)
 case 3:o=d
 n=C.S.br(0,B.eq(U.ep(o.e).c.a.h(0,"charset")).br(0,o.x))
 m=J.a2(n)
@@ -13062,7 +13062,7 @@ k=P.a9(["Content-Type","application/json"],l,l)
 l=t.z
 p=C.S.eW(P.a9(["username",a,"password",b],l,l))
 s=3
-return P.a4(G.D9(P.d8("https://api.ceep.org.br/login"),p,k),$async$a_p)
+return P.a4(G.D9(P.d8("http://201.42.59.203:3333/login"),p,k),$async$a_p)
 case 3:o=d
 n=C.S.br(0,B.eq(U.ep(o.e).c.a.h(0,"charset")).br(0,o.x))
 l=J.a2(n)
@@ -22010,8 +22010,8 @@ this.b=b},
 adt:function adt(){},
 adu:function adu(a){this.a=a},
 adk:function adk(){},
-uk(){var s,r="https://socket.ceep.org.br",q="query",p=P.a9(["transport",H.b(["websocket"],t.s),"autoConnect",!0],t.N,t.z),o=P.d8(r),n=o.gdC()+"://"+o.gfO(o)+":"+o.gl4(o),m=o.gdc(o),l=$.aje.aj(0,n)&&$.aje.h(0,n).c.aj(0,m),k=p.h(0,"forceNew")===!0||p.h(0,"force new connection")===!0||!1===p.h(0,"multiplex")||l,j=H.bh("io")
-if(k){$.awU().aU(C.r,"ignoring socket cache for https://socket.ceep.org.br",null,null)
+uk(){var s,r="http://201.42.59.203:3334",q="query",p=P.a9(["transport",H.b(["websocket"],t.s),"autoConnect",!0],t.N,t.z),o=P.d8(r),n=o.gdC()+"://"+o.gfO(o)+":"+o.gl4(o),m=o.gdc(o),l=$.aje.aj(0,n)&&$.aje.h(0,n).c.aj(0,m),k=p.h(0,"forceNew")===!0||p.h(0,"force new connection")===!0||!1===p.h(0,"multiplex")||l,j=H.bh("io")
+if(k){$.awU().aU(C.r,"ignoring socket cache for http://201.42.59.203:3334",null,null)
 j.b=Q.ari(p,r)}else{s=$.aje.h(0,n)
 if(s==null){s=Q.ari(p,r)
 $.aje.k(0,n,s)}j.b=s}if(o.giP(o).length!==0&&p.h(0,q)==null)p.k(0,q,o.giP(o))
@@ -69496,7 +69496,7 @@ i=P.a9(["Content-Type","application/json"],j,j)
 j=t.z
 m=C.S.eW(P.a9(["idPartida",a,"idAdversario",b,"eixoX",c.gOg(),"eixoY",c.gOh()],j,j))
 s=3
-return P.a4(G.D9(P.d8("https://api.ceep.org.br/jogada"),m,i),$async$vS)
+return P.a4(G.D9(P.d8("http://201.42.59.203:3333/jogada"),m,i),$async$vS)
 case 3:l=e
 o=C.S.br(0,"["+B.eq(U.ep(l.e).c.a.h(0,"charset")).br(0,l.x)+"]")
 P.b7("Response: ")
@@ -69537,7 +69537,7 @@ q.toString
 q.f.tr(r)},
 SM(a,b,c){this.X(new X.aam(this,a,b,c))},
 SG(a,b,c){this.X(new X.aal(this,a,b,c))},
-a9J(a,b){var s,r,q=this,p=null,o="https://api.ceep.org.br/files/"
+a9J(a,b){var s,r,q=this,p=null,o="http://201.42.59.203:3333/files/"
 if(q.e[b].h(0,"status")){s=q.e[b].h(0,"rotacao")
 r=q.e
 s=s?T.zF(C.Z,1.5707963267948966,U.wf(C.b.G(o,r[b].h(0,"image")),C.ae,p,p),p):U.wf(C.b.G(o,r[b].h(0,"image")),C.ae,p,p)}else s=p
@@ -69646,7 +69646,7 @@ t9(){var s=0,r=P.a1(t.z),q=1,p,o=[],n=this,m,l,k,j
 var $async$t9=P.X(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 s=6
-return P.a4(G.p2(P.d8(C.b.G("https://api.ceep.org.br/modoJogo/find?idModoJogo=",n.e))),$async$t9)
+return P.a4(G.p2(P.d8(C.b.G("http://201.42.59.203:3333/modoJogo/find?idModoJogo=",n.e))),$async$t9)
 case 6:m=b
 n.X(new U.adE(n,m))
 q=1
@@ -69687,7 +69687,7 @@ j=j.d
 s=j*0.2
 r=this.a
 q=i*0.45
-p=U.wf(C.b.G("https://api.ceep.org.br/files/",r.ch[b]),C.dl,s,q)
+p=U.wf(C.b.G("http://201.42.59.203:3333/files/",r.ch[b]),C.dl,s,q)
 o=U.c8(k,k,C.h,k,15,k,k,k,k,k,k,k,k,C.P,k,k,k,k,k,k)
 n=T.dQ(L.aw(r.z[b],k,k,k,!0,C.cr,k,k),k,k)
 m=K.iD(12)
@@ -69891,7 +69891,7 @@ var $async$t8=P.X(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 j=n.e
 s=6
-return P.a4(G.p2(P.d8(j===$?n.e="https://api.ceep.org.br/modoJogo/lista":j)),$async$t8)
+return P.a4(G.p2(P.d8(j===$?n.e="http://201.42.59.203:3333/modoJogo/lista":j)),$async$t8)
 case 6:m=b
 j=m
 l=t.j.a(C.S.lW(0,B.eq(U.ep(j.e).c.a.h(0,"charset")).br(0,j.x),null))
@@ -70206,7 +70206,7 @@ O.Bm.prototype={
 qj(){var s=0,r=P.a1(t.j),q,p
 var $async$qj=P.X(function(a,b){if(a===1)return P.Z(b,r)
 while(true)switch(s){case 0:s=3
-return P.a4(G.p2(P.d8(C.b.G("https://api.ceep.org.br/cenario/find?idCenario=",$.akd))),$async$qj)
+return P.a4(G.p2(P.d8(C.b.G("http://201.42.59.203:3333/cenario/find?idCenario=",$.akd))),$async$qj)
 case 3:p=b
 q=C.S.br(0,"["+B.eq(U.ep(p.e).c.a.h(0,"charset")).br(0,p.x)+"]")
 s=1
@@ -70277,7 +70277,7 @@ N8(a,b,c){var s,r=this,q=null,p=r.Q=!1,o=r.z
 if(o.length!==0){s=0
 do{if(b==o[s])r.Q=!0;++s}while(s<o.length?!r.Q:p)}if(r.Q)p=M.U(q,q,q,q,q,q,q,q,q)
 else{p=F.aq2(C.aK)
-p=new T.an(C.ax,M.U(C.Z,T.b4(H.b([M.U(q,U.wf(C.b.G("https://api.ceep.org.br/files/",a),C.ae,q,q),q,q,q,80,q,q,120),L.aw(H.c(c),q,q,q,q,C.xQ,q,q)],t.p),C.k,C.ba,C.l,C.v),q,q,new S.bw(C.h,q,p,C.dj,q,q,C.R),80,q,q,180),q)}return p},
+p=new T.an(C.ax,M.U(C.Z,T.b4(H.b([M.U(q,U.wf(C.b.G("http://201.42.59.203:3333/files/",a),C.ae,q,q),q,q,q,80,q,q,120),L.aw(H.c(c),q,q,q,q,C.xQ,q,q)],t.p),C.k,C.ba,C.l,C.v),q,q,new S.bw(C.h,q,p,C.dj,q,q,C.R),80,q,q,180),q)}return p},
 agy(){this.X(new O.afI(this))},
 a9x(a,b){var s=this,r=b.b,q=J.a2(r)
 s.r=J.l(q.h(r,0),"barcos")
@@ -70325,7 +70325,7 @@ O.afH.prototype={
 $1(a){},
 $S:423}
 O.aft.prototype={
-$3(a,b,c){var s=null,r="https://api.ceep.org.br/files/",q=this.a,p=this.b,o=q.x[p].h(0,"status"),n=q.x[p].h(0,"rotacao")
+$3(a,b,c){var s=null,r="http://201.42.59.203:3333/files/",q=this.a,p=this.b,o=q.x[p].h(0,"status"),n=q.x[p].h(0,"rotacao")
 p=q.x[p].h(0,"image")
 if(o)if(n){q=U.wf(C.b.G(r,p),C.ae,s,s)
 q=T.zF(C.Z,1.5707963267948966,q,s)}else q=U.wf(C.b.G(r,p),C.ae,s,s)
@@ -70425,7 +70425,7 @@ var $async$e1=P.X(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 j=n.Q
 s=6
-return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.Q="https://api.ceep.org.br/usuarios/find":j,"?id="),n.gwh()))),$async$e1)
+return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.Q="http://201.42.59.203:3333/usuarios/find":j,"?id="),n.gwh()))),$async$e1)
 case 6:m=b
 j=m
 s=7
@@ -70452,7 +70452,7 @@ else{s=K.iD(8)
 r=q.ch
 if(r===$){r=q.gma()
 r.toString
-r=q.ch="https://api.ceep.org.br/files/"+r}m.push(new T.an(C.ic,T.v9(s,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(r,1)),p,p,p,p,C.af),120,p,p,120)),p))}s=q.f
+r=q.ch="http://201.42.59.203:3333/files/"+r}m.push(new T.an(C.ic,T.v9(s,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(r,1)),p,p,p,p,C.af),120,p,p,120)),p))}s=q.f
 m.push(T.b6(H.b([T.b4(H.b([L.aw(s===$?q.f="":s,p,p,p,p,C.xR,p,p),L.aw("#"+C.c.gH(J.bI(q.gwh()).split("-")).toUpperCase(),p,p,p,p,C.fS,p,p)],n),C.k,C.ba,C.l,C.v),T.b4(H.b([new T.an(C.i9,M.U(p,p,p,p,C.kG,20,p,p,20),p),C.rr],n),C.k,C.y,C.l,C.v)],n),C.k,C.y,C.l))
 return M.eJ(o,C.aL,T.b6(H.b([M.U(p,T.b4(m,C.k,C.W,C.l,C.v),p,p,C.hL,p,p,p,p),T.lo(B.a_l(new X.acd(q),J.aR(q.gtI()),p,C.q),1)],n),C.k,C.y,C.l),p)}}
 X.ace.prototype={
@@ -70499,8 +70499,8 @@ if(J.d(J.l(o.gII(),b),"null"))n.push(T.bb(U.f3("assets/empty-person.png",p,p,p),
 else{r=K.iD(8)
 q=J.l(o.gII(),b)
 q.toString
-P.b7(C.b.G("URL: https://api.ceep.org.br/files/",q))
-n.push(T.v9(r,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(C.b.G("https://api.ceep.org.br/files/",q),1)),p,p,p,p,C.af),65,p,p,65)))}n.push(new T.an(C.bv,L.aw(J.l(o.ga8E(),b),p,p,p,p,A.e5(p,p,C.aK,p,p,p,p,p,p,p,p,16,p,C.eR,p,p,!0,p,p,p,p,p,p,p,p),p,p),p))
+P.b7(C.b.G("URL: http://201.42.59.203:3333/files/",q))
+n.push(T.v9(r,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(C.b.G("http://201.42.59.203:3333/files/",q),1)),p,p,p,p,C.af),65,p,p,65)))}n.push(new T.an(C.bv,L.aw(J.l(o.ga8E(),b),p,p,p,p,A.e5(p,p,C.aK,p,p,p,p,p,p,p,p,16,p,C.eR,p,p,!0,p,p,p,p,p,p,p,p),p,p),p))
 n.push(C.jk)
 n.push(new T.an(C.i8,T.bb(U.f3("assets/green-dot.png",p,p,p),20,20),p))
 s=new T.an(C.ib,M.U(p,V.uY(T.b4(n,C.k,C.y,C.l,C.v),p),p,p,C.cz,80,p,p,p),p)}return s},
@@ -70534,7 +70534,7 @@ return s===$?this.fx=0:s},
 gxf(){var s=this.go
 if(s===$){s=this.gma()
 s.toString
-s=this.go="https://api.ceep.org.br/files/"+s}return s},
+s=this.go="http://201.42.59.203:3333/files/"+s}return s},
 aK(){var s=this
 s.bb()
 s.e1()
@@ -70545,7 +70545,7 @@ var $async$e1=P.X(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 i=m.fy
 s=7
-return P.a4(G.p2(P.d8(C.b.G(J.es(i===$?m.fy="https://api.ceep.org.br/usuarios/find":i,"?id="),m.d))),$async$e1)
+return P.a4(G.p2(P.d8(C.b.G(J.es(i===$?m.fy="http://201.42.59.203:3333/usuarios/find":i,"?id="),m.d))),$async$e1)
 case 7:l=b
 i=l
 s=8
@@ -70574,7 +70574,7 @@ var $async$oJ=P.X(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 j=n.k1
 s=6
-return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.k1="https://api.ceep.org.br/usuarios/amigosOnline":j,"?id="),n.d))),$async$oJ)
+return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.k1="http://201.42.59.203:3333/usuarios/amigosOnline":j,"?id="),n.d))),$async$oJ)
 case 6:m=b
 j=m
 s=7
@@ -70600,7 +70600,7 @@ var $async$t3=P.X(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 j=n.k4
 s=6
-return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.k4="https://api.ceep.org.br/usuarios/historico":j,"?id="),n.d))),$async$t3)
+return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.k4="http://201.42.59.203:3333/usuarios/historico":j,"?id="),n.d))),$async$t3)
 case 6:m=b
 j=m
 l=t.f.a(C.S.lW(0,B.eq(U.ep(j.e).c.a.h(0,"charset")).br(0,j.x),null))
@@ -70732,7 +70732,7 @@ if(J.d(J.l(o.gIK(),b),"null"))n.push(T.bb(U.f3("assets/empty-person.png",p,p,p),
 else{r=K.iD(8)
 q=J.l(o.gIK(),b)
 q.toString
-n.push(T.v9(r,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(C.b.G("https://api.ceep.org.br/files/",q),1)),p,p,p,p,C.af),65,p,p,65)))}n.push(new T.an(C.bv,L.aw(J.l(o.ga8G(),b),p,p,p,p,A.e5(p,p,C.aK,p,p,p,p,p,p,p,p,16,p,C.eR,p,p,!0,p,p,p,p,p,p,p,p),p,p),p))
+n.push(T.v9(r,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(C.b.G("http://201.42.59.203:3333/files/",q),1)),p,p,p,p,C.af),65,p,p,65)))}n.push(new T.an(C.bv,L.aw(J.l(o.ga8G(),b),p,p,p,p,A.e5(p,p,C.aK,p,p,p,p,p,p,p,p,16,p,C.eR,p,p,!0,p,p,p,p,p,p,p,p),p,p),p))
 n.push(C.jk)
 n.push(new T.an(C.i8,T.bb(U.f3(o.RO(J.l(J.l(o.gKq(),b),"venceu"),b),p,p,p),20,20),p))
 s=new T.an(C.ib,M.U(p,V.uY(T.b4(n,C.k,C.y,C.l,C.v),p),p,p,C.cz,80,p,p,p),p)}return s},
@@ -70752,7 +70752,7 @@ if(J.d(J.l(o.gIJ(),b),"null"))n.push(T.bb(U.f3("assets/empty-person.png",p,p,p),
 else{r=K.iD(8)
 q=J.l(o.gIJ(),b)
 q.toString
-n.push(T.v9(r,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(C.b.G("https://api.ceep.org.br/files/",q),1)),p,p,p,p,C.af),65,p,p,65)))}n.push(new T.an(C.bv,L.aw(J.l(o.ga8F(),b),p,p,p,p,A.e5(p,p,C.aK,p,p,p,p,p,p,p,p,16,p,C.eR,p,p,!0,p,p,p,p,p,p,p,p),p,p),p))
+n.push(T.v9(r,M.U(p,p,p,p,new S.bw(p,X.vo(C.ae,new D.he(C.b.G("http://201.42.59.203:3333/files/",q),1)),p,p,p,p,C.af),65,p,p,65)))}n.push(new T.an(C.bv,L.aw(J.l(o.ga8F(),b),p,p,p,p,A.e5(p,p,C.aK,p,p,p,p,p,p,p,p,16,p,C.eR,p,p,!0,p,p,p,p,p,p,p,p),p,p),p))
 n.push(C.jk)
 n.push(new T.an(C.i8,T.bb(U.f3("assets/green-dot.png",p,p,p),20,20),p))
 s=new T.an(C.ib,M.U(p,V.uY(T.b4(n,C.k,C.y,C.l,C.v),p),p,p,C.cz,80,p,p,p),p)}return s},
@@ -70763,9 +70763,9 @@ S.Bn.prototype={
 gxf(){var s=this.Q
 if(s===$){s=this.f
 s.toString
-s=this.Q="https://api.ceep.org.br/files/"+s}return s},
+s=this.Q="http://201.42.59.203:3333/files/"+s}return s},
 gRA(){var s=this.cx
-return s===$?this.cx="https://api.ceep.org.br/usuarios":s},
+return s===$?this.cx="http://201.42.59.203:3333/usuarios":s},
 aK(){this.bb()
 P.b7("Entrou no initstate")
 this.e1()},
@@ -70774,7 +70774,7 @@ var $async$e1=P.X(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
 j=n.z
 s=6
-return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.z="https://api.ceep.org.br/usuarios/find":j,"?id="),n.d))),$async$e1)
+return P.a4(G.p2(P.d8(C.b.G(J.es(j===$?n.z="http://201.42.59.203:3333/usuarios/find":j,"?id="),n.d))),$async$e1)
 case 6:m=b
 j=m
 g=t.f
